@@ -143,6 +143,11 @@ public class StateMachineAccessTests {
 		}
 
 		@Override
+		public State<String, String> getCurrentState() {
+			return null;
+		}
+
+		@Override
 		public Collection<Transition<String, String>> getTransitions() {
 			return null;
 		}

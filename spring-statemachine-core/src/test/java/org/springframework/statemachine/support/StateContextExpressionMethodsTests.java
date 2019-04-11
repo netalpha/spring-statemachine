@@ -192,6 +192,11 @@ public class StateContextExpressionMethodsTests {
 		}
 
 		@Override
+		public State<SpelStates, SpelEvents> getCurrentState() {
+			return null;
+		}
+
+		@Override
 		public Collection<Transition<SpelStates, SpelEvents>> getTransitions() {
 			return null;
 		}

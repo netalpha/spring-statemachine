@@ -83,6 +83,8 @@ public interface Region<S, E> {
 	 */
 	State<S,E> getState();
 
+
+	State<S,E> getCurrentState();
 	/**
 	 * Gets the {@link State}s defined in this region. Returned collection is
 	 * an unmodifiable copy because states in a state machine are immutable.

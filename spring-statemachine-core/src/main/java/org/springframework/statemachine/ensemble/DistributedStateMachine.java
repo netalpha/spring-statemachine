@@ -125,6 +125,11 @@ public class DistributedStateMachine<S, E> extends LifecycleObjectSupport implem
 	}
 
 	@Override
+	public State<S, E> getCurrentState() {
+		return delegate.getCurrentState();
+	}
+
+	@Override
 	public Collection<Transition<S, E>> getTransitions() {
 		return delegate.getTransitions();
 	}
