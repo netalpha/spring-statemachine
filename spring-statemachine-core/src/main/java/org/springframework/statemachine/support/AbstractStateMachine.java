@@ -191,6 +191,11 @@ public abstract class AbstractStateMachine<S, E> extends StateMachineObjectSuppo
 	}
 
 	@Override
+	public State<S, E> getCurrentState() {
+		return currentState;
+	}
+
+	@Override
 	public State<S,E> getInitialState() {
 		return initialState;
 	}
